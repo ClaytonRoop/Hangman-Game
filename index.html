@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h1> The psychic game!</h1>
+
+
+    <div class="row intro">
+        Guess what letter I'm thinking of
+    </div>
+    <div class="row"></div>
+    <div class="row" id="wins">
+        Wins: wins
+    </div>
+    <div class="row"></div>
+    <div class="row" id="losses">
+        Losses: 
+    </div>
+    <div class="row"></div>
+    <div class="row"  id="remaining">
+        Remaining Guesses: 
+    </div>
+    <div class="row"></div>
+    <div class="row" id="guesses">
+        Letters guessed: 
+    </div>
+</div>
+</body>
+
+    <script>
+
+        // This array contains the random words we will use as the hangman library
+
+        // var computerChoices = ["adjust", "amusement", "angle", "zebra", "answer", "button", "carriage", "change", "chemical", "discovery", "division", "feeling", "feather", "healthy", "hospital", "harmony", "language", "libary", "liquid", "knowledge", "measure", "married", "mountain", "knife", "muscle", "opinion", "parrallel", "brick", "scubba", "automobile", "playground", "retirement", "alcohol", "computer", "notebook", "movies", "quizzes", "politics", "school", "peanuts", "pasta", "chicken", "rooster", "random", "variable", "lunchbox", "ancient", "europe", "history", "selection", "masterpiece", "mississippi", "ideas", "innovation", "leader"]
+        // var wrongGuess = [];
+        // var allGuesses = [];
+        // var remainingGuess = 9;
+        // var underscores = [];
+
+    //     var computerChoices = [ "a", "b", "c", "d", "e", "f", "g", "h", "i","j", "k", "l", "m", "n", 
+    //     "o", "p", "q", "r", "s", "t", "u", "v", "w", "y", "x", "z"];
+    //     var wrongGuess = [];
+    //     var remainingGuess = 9;
+    //     var lettersGuessed = [];
+    //     var wins = 0;
+    //     var losses =0; 
+    
+    //    //random word generater
+
+    //     var computerPick = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+       
+    //     console.log(computerPick); 
+
+    //     // var newComputerGuess = function () {
+
+           
+
+    //     // }
+
+    //     var reset = function() {
+    //         remainingGuess = 9;
+    //         computerPick = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+    //         console.log(computerPick);
+
+    //         lettersGuessed = [];
+    //     }
+        
+
+
+    //      document.onkeyup = function (event) {
+    //          var userGuess = event.key;
+    //          alert(userGuess);
+             
+    //          var lowerCaseGuess = userGuess.toLowerCase();
+    //          lettersGuessed.push(lowerCaseGuess);
+    //          console.log(lettersGuessed);
+
+        
+             
+    //          if (remainingGuess < 1) {
+    //              alert("You Lose you have this many losses: " + ++losses);
+    //              remainingGuess = 9;
+    //              alert("Start over");
+    //              reset();
+    //          } else if (lowerCaseGuess == computerPick) {
+    //              alert ("You Win wins: " + ++wins);
+    //              reset();
+    //          }else if (lowerCaseGuess !== computerPick) {
+    //              alert ("Wrong, pick again. remaining guesses = " + --remainingGuess)
+    //          }
+    //     }
+
+    // //     for (var i = 0; i < computerPick.length; i++)
+    // //     {
+    // //         console.log("_ ")
+    // //     }   
+
+
+    // //     document.onkeyup = function (event) 
+    // // {
+    // //     console.log(event)
+    // //     var userGuess = event.key;
+       
+    // //     for (var i = 0; i < computerPick.length; i++)
+    // //     {
+    // //         if (userGuess == computerPick.charAt(i)) {
+    // //             console.log("we have a match at positon " + i );
+    // //             allGuesses.push(userGuess);
+    // //             console.log(allGuesses);
+    // //             // ?? get it to show right guess on the screen
+
+    // //         } else if ((userGuess != computerPick.charAt(i)) && (remainingGuess != 0)) {
+    // //             remainingGuess--;
+    // //             console.log("You have" + remainingGuess + "guesses left");
+    // //         } else {
+    // //             console.log("No more Guesses, you lose")
+    // //         }
+    // //     }
+    
+    // // }
+    
+
+    //     // function letterChecker(event) { 
+    //     // for (var i = 0; i < computerPick.length; i++)
+    //     // if (cycleChar == computerPick.charAt(i);
+    //     //     }
+     
+    // </script>
+
+
+
