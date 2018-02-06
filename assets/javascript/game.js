@@ -31,30 +31,28 @@ var reset = function () {
 
 document.onkeyup = function (event) {
     var userGuess = event.key;
-    alert(userGuess);
+    // alert(userGuess);
 
     var lowerCaseGuess = userGuess.toLowerCase();
     lettersGuessed.push(lowerCaseGuess);
     console.log(lettersGuessed);
     var showGuesses = lettersGuessed.join(", ");
-    document.getElementById("guesses").innerHTML = "Letter Guessed" + showGuesses;
+    document.getElementById("guesses").innerHTML = "Letters Guessed: " + showGuesses;
 
 
 
-    if (remainingGuess < 1) {
+    if (remainingGuess < 2) {
         // alert("You Lose you have this many losses: " + ++losses);
-       
-        document.getElementsByClassName("row wins").innerHTML = "You Lose you have this many losses: " + ++losses;
-       
+       alert("You lose!");
         remainingGuess = 9;
         ++losses;
-
         reset();
     } else if (lowerCaseGuess == computerPick) {
-        alert("You Win wins: " + ++wins);
+        alert("You Win");
+         ++wins;
         reset();
     } else if (lowerCaseGuess !== computerPick) {
-        alert("Wrong, pick again. remaining guesses = " + --remainingGuess)
+         --remainingGuess;
     }
 
     document.getElementById("wins").innerHTML = "Wins: " + wins;

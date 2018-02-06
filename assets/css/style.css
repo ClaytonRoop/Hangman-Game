@@ -1,0 +1,17 @@
+body {
+    background-color: pink;
+}
+
+.row {
+    line-height: 30px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#intro {
+    margin: 10px;
+    margin-left: 0px;
+    font-size: 16px;
+}
